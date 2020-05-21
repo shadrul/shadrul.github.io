@@ -1,7 +1,7 @@
 function init(){
 	canvas = document.getElementById("game-canvas");
-	W = canvas.width = 1321;
-	H = canvas.height = 925;
+	W = canvas.width = 990 ;
+	H = canvas.height = 660;
 	pen = canvas.getContext('2d');
 	cs = 66;
 	
