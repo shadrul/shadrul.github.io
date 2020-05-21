@@ -1,7 +1,7 @@
 function init(){
 	canvas = document.getElementById("game-canvas");
-	W = canvas.width = 990 ;
-	H = canvas.height = 660;
+	W = canvas.width = window.innerWidth -55;
+	H = canvas.height = window.innerHeight -30;
 	pen = canvas.getContext('2d');
 	cs = 66;
 	
@@ -46,7 +46,7 @@ function init(){
 		},
 
 		updateSnake: function(){
-			document.getElementById("score").innerHTML = score +","+ speed;
+			// document.getElementById("score").innerHTML = score +","+ speed;
 			var headX = this.cells[0].x;
 			var headY = this.cells[0].y;
 			if(headX == food.x && headY == food.y){
