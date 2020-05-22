@@ -12,7 +12,7 @@ function init(){
 	food_image = new Image();
 	food_image.src = "Assets/apple.png";
 	special_food = new Image();
-	special_food.src = "Assets/sikangi.jpeg";
+	special_food.src = "Assets/banana.jpeg";
 	speed = 200;
 	food = getFood();
 
@@ -126,6 +126,7 @@ function init(){
 			for(let i=0;i<this.cells.length;i++){
 				if(i==0){
 					pen.fillStyle = 'red';
+
 				}
 				else{
 					pen.fillStyle = this.color;
